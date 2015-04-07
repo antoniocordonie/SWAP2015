@@ -1,6 +1,6 @@
 #Práctica1
 
-1. **Resultado de la ejecución de la orden** *apache2 -v*:
+1. **Resultado de la ejecución de la orden** *apache2 -v*
 	```
 	Last login: Tue Mar  3 16:30:02 2015 from 
 	user@ubuntuServer-1:~$ apache2 -v
@@ -8,7 +8,7 @@
 	Server built:   Jul 22 2014 14:37:02
 	```
 
-2. **Resultado de la ejecución de la orden** *ps aux | grep apache*:
+2. **Resultado de la ejecución de la orden** *ps aux | grep apache* 
 	```
 	user@ubuntuServer-1:~$ ps aux | grep apache
 	root      1224  0.0  0.6  34044  6900 ?        Ss   16:13   0:00 /usr/sbin/apache2 -k start
@@ -20,4 +20,4 @@
 	user      2580  0.0  0.0   4412   824 pts/0    S+   16:46   0:00 grep --color=auto apache
 	user@ubuntuServer-1:~$
 	```
-	![Imagen 1](1__.png "Práctica 1")
+	![Imagen 1](Capturas/1__.png "Práctica 1")
