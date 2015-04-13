@@ -19,19 +19,19 @@
 **Respuesta correcta: B**
 
 
-**Escalabilidad mediante ampliación horizontal es:**
+**Escalabilidad**
 
 
-**A)** *Incrementar la Ram de un servidor*
+**A)** *Ampliar el número de servidores de un rack.*
 
 
-**B)** *Incrementar el numero de discos de un servidor*
+**B)** *Ampliar el número de rack de una granja de servidores.*
 
 
-**C)** *Añadir máquinas(servidores web, servidores de datos...)*
+**C)** *Ampliar el hardware de un servidor.*
 
 
-**D)** *Ninguna de las anteriores es correcta*
+**D)** *Todas son correctas.*
 
 
 **Respuesta correcta: C**
