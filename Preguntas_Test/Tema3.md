@@ -1,42 +1,40 @@
--#Preguntas tipo test - Tema
+##Preguntas tipo test - Tema3
 
 
-****
+**Con respecto a la configuracion de red de una granja web...**
 
 
-**A)** **
+**A)** *Hay que duplicar el ancho de banda cada 5 años*
 
 
-**B)** **
+**B)** *Hay que duplicar el ancho de banda cada 10 años*
 
 
-**C)** **
+**C)** *Hay que duplicar el ancho de banda cada año*
 
 
-**D)** **
+**D)** *Lo ideal es contratar la máxima conexión que haya y no cambiar nada*
 
 
-**Respuesta correcta: **
+**Respuesta correcta: C**
 
 
+**¿Cómo podemos hacer que la granja web sea lo más segura posible?**
 
 
-****
+**A)** *Instalando un cortafuegos que filtre todo el tráfico a la subred de la empresa*
 
 
-**A)** **
+**B)** *Instalando un DMZ simple*
 
 
-**B)** **
+**C)** *Que la red corporativa no tenga internet*
 
 
-**C)** **
+**D)** *Instalando un DMZ doble con subred frontal y subred trasera*
 
 
-**D)** **
-
-
-**Respuesta correcta: **
+**Respuesta correcta: D**
 
 
 *[Volver a ínicio](../../../)
