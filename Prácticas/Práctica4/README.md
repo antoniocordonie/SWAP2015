@@ -3,10 +3,14 @@
 
 0. ###Estructura del entorno virtual.
 
-	**Maquina1: 192.168.1.10**
-	**Maquina2: 192.168.1.20**
-	**Maquina de balanceo(Ngingx) :192.168.1.30**
-	**Maquina de balanceo(HAProxy):192.168.1.30**
+	**Maquina1:** *192.168.1.10*
+
+	**Maquina2:** *192.168.1.20*
+
+	**Maquina de balanceo(Ngingx) :** 192.168.1.30**
+
+	**Maquina de balanceo(HAProxy):** 192.168.1.30**
+
 
 	##El software para la realización de los tests de estrés de la granja web ha sido Apache benchmark y Siege.
 
