@@ -19,7 +19,7 @@
 	*La página solicitada contiene el siguiente script para aumentar el uso de CPU de la máquina: *
 
 
-	![Imagen 1](Capturas/script.png "Práctica 4.0")
+	![Imagen 1](Capturas/script.PNG "Práctica 4.0")
 
 
 2. ###Apache Benchmark:
