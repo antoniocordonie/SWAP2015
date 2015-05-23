@@ -7,16 +7,16 @@
 
 	**Maquina2:** *192.168.1.20*
 
-	**Maquina de balanceo(Ngingx) :** 192.168.1.30**
+	**Maquina de balanceo(Ngingx) :** *192.168.1.30*
 
-	**Maquina de balanceo(HAProxy):** 192.168.1.30**
+	**Maquina de balanceo(HAProxy):** *192.168.1.30*
 
 
 	##El software para la realización de los tests de estrés de la granja web ha sido Apache benchmark y Siege.
 
 *Se han realizado un total de 10 repeticiones contra la Máquina1, otras 10 repeticiones contra el balanceador de carga con Ngingx y otras 10 repeticiones contra el balanceador de carga con HAProxy, primeramente con Apache Benchmark y después con Siege.*
 
-	*La página solicitada contiene el siguiente script para aumentar el uso de CPU de la máquina:*
+	*La página solicitada contiene el siguiente script para aumentar el uso de CPU de la máquina: *
 
 
 	![Imagen 1](Capturas/script.png "Práctica 4.0")
