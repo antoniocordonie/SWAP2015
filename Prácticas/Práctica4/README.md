@@ -18,6 +18,8 @@
 
 	##La página solicitada contiene el siguiente script para aumentar el uso de CPU de la máquina:
 
+
+
 	![Imagen 1](Capturas/script.png "Práctica 4.1")
 
 
