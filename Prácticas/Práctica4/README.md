@@ -1,7 +1,7 @@
 #Práctica 4
 
 
-0. ###Estructura del entorno virtual.
+1. ###Estructura del entorno virtual.
 
 	**Maquina1:** *192.168.1.10*
 
@@ -16,13 +16,13 @@
 
 *Se han realizado un total de 10 repeticiones contra la Máquina1, otras 10 repeticiones contra el balanceador de carga con Ngingx y otras 10 repeticiones contra el balanceador de carga con HAProxy, primeramente con Apache Benchmark y después con Siege.
 
-	*La página solicitada contiene el siguiente script para aumentar el uso de CPU de la máquina:
+	*La página solicitada contiene el siguiente script para aumentar el uso de CPU de la máquina:*
 
 
 	![Imagen 1](Capturas/script.png "Práctica 4.0")
 
 
-1. ###Apache Benchmark:
+2. ###Apache Benchmark:
 
 
 	*Tabla de resultados Apache Benchmark contra la Máquina1*
@@ -56,7 +56,7 @@
 	![Imagen 6](Capturas/4__7.png "Práctica 4.1")
 
 
-2. ###Siege:
+3. ###Siege:
 
 	*Tabla de resultados Siege contra la Máquina1*
 	
