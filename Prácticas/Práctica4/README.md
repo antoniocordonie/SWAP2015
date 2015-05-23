@@ -14,7 +14,7 @@
 
 	##El software para la realización de los tests de estrés de la granja web ha sido Apache benchmark y Siege.
 
-*Se han realizado un total de 10 repeticiones contra la Máquina1, otras 10 repeticiones contra el balanceador de carga con Ngingx y otras 10 repeticiones contra el balanceador de carga con HAProxy, primeramente con Apache Benchmark y después con Siege.
+*Se han realizado un total de 10 repeticiones contra la Máquina1, otras 10 repeticiones contra el balanceador de carga con Ngingx y otras 10 repeticiones contra el balanceador de carga con HAProxy, primeramente con Apache Benchmark y después con Siege.*
 
 	*La página solicitada contiene el siguiente script para aumentar el uso de CPU de la máquina:*
 
