@@ -16,7 +16,6 @@
 
 *Se han realizado un total de 10 repeticiones contra la Máquina1, otras 10 repeticiones contra el balanceador de carga con Ngingx y otras 10 repeticiones contra el balanceador de carga con HAProxy, primeramente con Apache Benchmark y después con Siege.*
 
-	*Gráfica de resultados obtenidos en los 3 benchmarks con Siege*
 
 	![Imagen 4](Capturas/4__9.png "Práctica 4.2")
 
