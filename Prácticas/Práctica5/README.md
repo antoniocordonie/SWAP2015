@@ -7,76 +7,44 @@
 
 	**Maquina2:** *192.168.1.20*
 
-	**Maquina de balanceo(Ngingx) :** *192.168.1.30*
-
-	**Maquina de balanceo(HAProxy):** *192.168.1.30*
+2. ###Replicar la BD con mysqldump:
 
 
-	##El software para la realización de los tests de estrés de la granja web ha sido Apache benchmark y Siege.
-
-*Se han realizado un total de 10 repeticiones contra la Máquina1, otras 10 repeticiones contra el balanceador de carga con Ngingx y otras 10 repeticiones contra el balanceador de carga con HAProxy, primeramente con Apache Benchmark y después con Siege.*
-
-
-2. ###Apache Benchmark:
-
-
-	*Tabla de resultados Apache Benchmark contra la Máquina1*
+	*Replicamos la base de datos con mysqldump, aunque antes tenemos que acceder y bloquear las tablas mediante FLUSH*
 	
-	`ab -n 1000 -c 10 http://192.168.1.10/script.php`
+	`mysqldump pruebaSwap -u root -p > /root/datos.sql`
 
-	![Imagen 1](Capturas/4__1.png "Práctica 4.1")
+	![Imagen 1](Capturas/5__1.png "Práctica 5.2")
 
-	##Podemos observar en la siguiente captura como la Máquina1 tiene el uso de CPU al 99,7% y la Máquina2 al 0,0%
+	*Copiamos mediante scp, desde la máquina esclavo, la base de datos que se encuentra en la máquina maestro. Accedemos a mysql y creamos la base de datos. Acto seguido introducimos la base de datos copiada a mysql*
+
+	`scp root@192.168.1.10:/root/datos.sql /root/datos.sql`
+	`mysql -u root -p pruebaSwap < /root/datos.sql`
 	
-	![Imagen 2](Capturas/AB-contra-UbuntuServer1.png "Práctica 4.1")
+	![Imagen 2](Capturas/5__2.png "Práctica 5.2")
 
 
+3. ###Replicación de una BD mediante configuración Maestro-Esclavo:
 
-	*Tabla de resultados Apache Benchmark contra el Balanceador con HAProxy*
+	*Editamos el archivo /etc/mysql/my.cnf haciendo lo mismo en el esclavo pero indicando server-id 2*
+
+	![Imagen 1](Capturas/5__3.png "Práctica 5.3")
+
+
+	*Con el comando show master status vemos como ha quedado el servidor Maestro*
+
+	![Imagen 2](Capturas/5__4.png "Práctica 5.3")
+
+
+	*Despues de configurar la máquina Esclavo podemos observar que Seconds_Behind_Master está a 0 por lo que todo ha ido bien*
 	
-	`ab -n 1000 -c 10 http://192.168.1.30/script.php`
 
-	![Imagen 3](Capturas/4__2.png "Práctica 4.1")
-
-
-	*Tabla de resultados Apache Benchmark contra el Balanceador con Ngingx*
-	
-	`ab -n 1000 -c 10 http://192.168.1.30/script.php`
-
-	![Imagen 4](Capturas/4__3.png "Práctica 4.1")
+	![Imagen 3](Capturas/5__5.png "Práctica 5.3")
 
 
-	*Gráfica de resultados obtenidos en los 3 benchmarks con AB*
+	*Finalmente comprobamos que cualquier cambio en la base de datos de la máquina Maestro es replicado en la máquina Esclavo sin problemas*
 
-	![Imagen 5](Capturas/4__7.png "Práctica 4.1")
-
-
-3. ###Siege:
-
-	*Tabla de resultados Siege contra la Máquina1*
-	
-	`siege -b -t60S -v http://192.168.1.10/script.php`
-
-	![Imagen 1](Capturas/4__4.png "Práctica 4.2")
-
-
-	*Tabla de resultados Siege contra el balanceador de carga con HAProxy*
-	
-	`siege -b -t60S -v http://192.168.1.30/script.php`
-
-	![Imagen 2](Capturas/4__5.png "Práctica 4.2")
-
-
-	*Tabla de resultados Siege contra el balanceador de carga con Ngingx*
-	
-	`siege -b -t60S -v http://192.168.1.30/script.php`
-
-	![Imagen 3](Capturas/4__6.png "Práctica 4.2")
-
-
-	*Gráfica de resultados obtenidos en los 3 benchmarks con Siege*
-
-	![Imagen 4](Capturas/4__8.png "Práctica 4.2")
+	![Imagen 4](Capturas/5__6.png "Práctica 5.3")
 
 
 

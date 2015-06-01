@@ -60,9 +60,6 @@
 	`mdadm /dev/md127 -a /dev/sdc`
 
 
-	*Listamos de nuevo el RAID y ya tenemos el disco sdc recuperado y Acive Devices : 2 *
-
-	![Imagen 3](Capturas/6__7.png "Práctica 6.3")
 
 **Autores:** *Alejandro Rodríguez López y Antonio Cordonie Campos*	
 		

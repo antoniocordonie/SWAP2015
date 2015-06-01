@@ -5,80 +5,64 @@
 
 	**Maquina1:** *192.168.1.10*
 
-	**Maquina2:** *192.168.1.20*
 
-	**Maquina de balanceo(Ngingx) :** *192.168.1.30*
-
-	**Maquina de balanceo(HAProxy):** *192.168.1.30*
+2. ###Configuración del RAID por software mdadm:
 
 
-	##El software para la realización de los tests de estrés de la granja web ha sido Apache benchmark y Siege.
-
-*Se han realizado un total de 10 repeticiones contra la Máquina1, otras 10 repeticiones contra el balanceador de carga con Ngingx y otras 10 repeticiones contra el balanceador de carga con HAProxy, primeramente con Apache Benchmark y después con Siege.*
-
-
-2. ###Apache Benchmark:
-
-
-	*Tabla de resultados Apache Benchmark contra la Máquina1*
+	*Una vez instalada la herramienta con aptitude install mdadm, configuramos el RAID1 con los 2 discos sdb y sdc. Le damos formato con mkfs /dev/md0*
 	
-	`ab -n 1000 -c 10 http://192.168.1.10/script.php`
+	`mdadm -C /dev/md0 --level=raid1 --raid-devices=2 /dev/sdb /dev/sdc`
 
-	![Imagen 1](Capturas/4__1.png "Práctica 4.1")
+	![Imagen 1](Capturas/6__1.png "Práctica 6.2")
 
-	##Podemos observar en la siguiente captura como la Máquina1 tiene el uso de CPU al 99,7% y la Máquina2 al 0,0%
+
+	*Lo montamos en la carpeta creada con el nombre /datos y listamos los detalles del array*
+
+		`mdadm --detail /dev/md0`
 	
-	![Imagen 2](Capturas/AB-contra-UbuntuServer1.png "Práctica 4.1")
+	![Imagen 2](Capturas/6__2.png "Práctica 6.2")
 
 
 
-	*Tabla de resultados Apache Benchmark contra el Balanceador con HAProxy*
+	*Ponemos el dispositivo en /etc/fstab para que se automonte*
 	
-	`ab -n 1000 -c 10 http://192.168.1.30/script.php`
 
-	![Imagen 3](Capturas/4__2.png "Práctica 4.1")
+	![Imagen 3](Capturas/6__3.png "Práctica 6.2")
 
 
-	*Tabla de resultados Apache Benchmark contra el Balanceador con Ngingx*
+
+3. ###Simular que uno de los discos ha fallado (Tarea opcional):
+
+	*Marcamos al disco sdc como fallo. Accedemos a la carpeta /datos y comprobamos que aún estan los datos accesibles*
 	
-	`ab -n 1000 -c 10 http://192.168.1.30/script.php`
+	`mdadm --manage --set-faulty /dev/md127 /dev/sdc`
 
-	![Imagen 4](Capturas/4__3.png "Práctica 4.1")
-
-
-	*Gráfica de resultados obtenidos en los 3 benchmarks con AB*
-
-	![Imagen 5](Capturas/4__7.png "Práctica 4.1")
+	![Imagen 1](Capturas/6__4.png "Práctica 6.3")
 
 
-3. ###Siege:
-
-	*Tabla de resultados Siege contra la Máquina1*
+	*Si listamos los detalles del RAID podemos observar como el disco sdc está marcado como faulty spare y en Failed Devices tenemos un 1, indicando que uno de los dos discos del RAID ha fallado*
 	
-	`siege -b -t60S -v http://192.168.1.10/script.php`
 
-	![Imagen 1](Capturas/4__4.png "Práctica 4.2")
+	![Imagen 2](Capturas/6__5.png "Práctica 6.3")
 
 
-	*Tabla de resultados Siege contra el balanceador de carga con HAProxy*
+	*Borramos el disco sdc del RAID con el comando: *
 	
-	`siege -b -t60S -v http://192.168.1.30/script.php`
+	`mdadm -r /dev/md127 /dev/sdc`
 
-	![Imagen 2](Capturas/4__5.png "Práctica 4.2")
+	*Accedemos de nuevo a la carpeta /datos y continuan los datos accesibles*
 
-
-	*Tabla de resultados Siege contra el balanceador de carga con Ngingx*
-	
-	`siege -b -t60S -v http://192.168.1.30/script.php`
-
-	![Imagen 3](Capturas/4__6.png "Práctica 4.2")
+	![Imagen 3](Capturas/6__6.png "Práctica 6.3")
 
 
-	*Gráfica de resultados obtenidos en los 3 benchmarks con Siege*
+	*Finalmente recuperamos el disco sdc con el comando: *
 
-	![Imagen 4](Capturas/4__8.png "Práctica 4.2")
+	`mdadm /dev/md127 -a /dev/sdc`
 
 
+	*Listamos de nuevo el RAID y ya tenemos el disco sdc recuperado y Acive Devices : 2 *
+
+	![Imagen 3](Capturas/6__7.png "Práctica 6.3")
 
 **Autores:** *Alejandro Rodríguez López y Antonio Cordonie Campos*	
 		

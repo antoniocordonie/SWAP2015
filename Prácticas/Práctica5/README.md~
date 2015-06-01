@@ -39,12 +39,12 @@
 	*Despues de configurar la máquina Esclavo podemos observar que Seconds_Behind_Master está a 0 por lo que todo ha ido bien*
 	
 
-	![Imagen 3](Capturas/5__5.png "Práctica 5.3")
+	![Imagen 3](Capturas/5__5.png "Práctica 5.2")
 
 
-	*Finalmente comprobamos que cualquier cambio en la base de datos de la máquina Maestro es replicado en la máquina Esclavo sin problemas*
+	*Gráfica de resultados obtenidos en los 3 benchmarks con Siege*
 
-	![Imagen 4](Capturas/5__6.png "Práctica 5.3")
+	![Imagen 4](Capturas/4__8.png "Práctica 4.2")
 
 
 
