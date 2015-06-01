@@ -1,0 +1,432 @@
+This is ApacheBench, Version 2.3 <$Revision: 1528965 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.100.5 (be patient)
+
+
+Server Software:        Apache/2.2.22
+Server Hostname:        192.168.100.5
+Server Port:            80
+
+Document Path:          /joomla
+Document Length:        315 bytes
+
+Concurrency Level:      500
+Time taken for tests:   0.849 seconds
+Complete requests:      1000
+Failed requests:        0
+Non-2xx responses:      1000
+Total transferred:      566000 bytes
+HTML transferred:       315000 bytes
+Requests per second:    1177.42 [#/sec] (mean)
+Time per request:       424.656 [ms] (mean)
+Time per request:       0.849 [ms] (mean, across all concurrent requests)
+Transfer rate:          650.80 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    3   3.3      0       9
+Processing:     3  131 199.6     15     837
+Waiting:        3  131 199.6     15     837
+Total:          9  134 201.5     16     842
+
+Percentage of the requests served within a certain time (ms)
+  50%     16
+  66%     25
+  75%    223
+  80%    227
+  90%    428
+  95%    430
+  98%    840
+  99%    841
+ 100%    842 (longest request)
+This is ApacheBench, Version 2.3 <$Revision: 1528965 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.100.5 (be patient)
+
+
+Server Software:        Apache/2.2.22
+Server Hostname:        192.168.100.5
+Server Port:            80
+
+Document Path:          /joomla
+Document Length:        315 bytes
+
+Concurrency Level:      500
+Time taken for tests:   0.831 seconds
+Complete requests:      1000
+Failed requests:        0
+Non-2xx responses:      1000
+Total transferred:      566000 bytes
+HTML transferred:       315000 bytes
+Requests per second:    1202.80 [#/sec] (mean)
+Time per request:       415.697 [ms] (mean)
+Time per request:       0.831 [ms] (mean, across all concurrent requests)
+Transfer rate:          664.83 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    3   3.0      0       9
+Processing:     3  125 190.8     17     820
+Waiting:        3  125 190.9     17     820
+Total:          9  128 192.5     17     823
+
+Percentage of the requests served within a certain time (ms)
+  50%     17
+  66%     23
+  75%    225
+  80%    232
+  90%    424
+  95%    428
+  98%    820
+  99%    822
+ 100%    823 (longest request)
+This is ApacheBench, Version 2.3 <$Revision: 1528965 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.100.5 (be patient)
+
+
+Server Software:        Apache/2.2.22
+Server Hostname:        192.168.100.5
+Server Port:            80
+
+Document Path:          /joomla
+Document Length:        315 bytes
+
+Concurrency Level:      500
+Time taken for tests:   0.832 seconds
+Complete requests:      1000
+Failed requests:        0
+Non-2xx responses:      1000
+Total transferred:      566000 bytes
+HTML transferred:       315000 bytes
+Requests per second:    1202.40 [#/sec] (mean)
+Time per request:       415.835 [ms] (mean)
+Time per request:       0.832 [ms] (mean, across all concurrent requests)
+Transfer rate:          664.61 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    3   3.4      0       9
+Processing:     3  120 189.6     17     820
+Waiting:        3  120 189.6     17     820
+Total:          9  123 191.7     17     824
+
+Percentage of the requests served within a certain time (ms)
+  50%     17
+  66%     21
+  75%    224
+  80%    231
+  90%    426
+  95%    434
+  98%    822
+  99%    823
+ 100%    824 (longest request)
+This is ApacheBench, Version 2.3 <$Revision: 1528965 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.100.5 (be patient)
+
+
+Server Software:        Apache/2.2.22
+Server Hostname:        192.168.100.5
+Server Port:            80
+
+Document Path:          /joomla
+Document Length:        315 bytes
+
+Concurrency Level:      500
+Time taken for tests:   0.831 seconds
+Complete requests:      1000
+Failed requests:        0
+Non-2xx responses:      1000
+Total transferred:      566000 bytes
+HTML transferred:       315000 bytes
+Requests per second:    1203.19 [#/sec] (mean)
+Time per request:       415.562 [ms] (mean)
+Time per request:       0.831 [ms] (mean, across all concurrent requests)
+Transfer rate:          665.04 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    3   3.2      0       9
+Processing:     3  116 175.0     19     820
+Waiting:        3  116 175.1     19     820
+Total:          9  119 177.0     20     823
+
+Percentage of the requests served within a certain time (ms)
+  50%     20
+  66%     24
+  75%    221
+  80%    228
+  90%    423
+  95%    428
+  98%    430
+  99%    822
+ 100%    823 (longest request)
+This is ApacheBench, Version 2.3 <$Revision: 1528965 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.100.5 (be patient)
+
+
+Server Software:        Apache/2.2.22
+Server Hostname:        192.168.100.5
+Server Port:            80
+
+Document Path:          /joomla
+Document Length:        315 bytes
+
+Concurrency Level:      500
+Time taken for tests:   0.437 seconds
+Complete requests:      1000
+Failed requests:        0
+Non-2xx responses:      1000
+Total transferred:      566000 bytes
+HTML transferred:       315000 bytes
+Requests per second:    2285.97 [#/sec] (mean)
+Time per request:       218.726 [ms] (mean)
+Time per request:       0.437 [ms] (mean, across all concurrent requests)
+Transfer rate:          1263.53 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    3   3.1      0       9
+Processing:     3   98 142.9     15     426
+Waiting:        3   98 142.9     15     426
+Total:          9  101 145.1     16     430
+
+Percentage of the requests served within a certain time (ms)
+  50%     16
+  66%     18
+  75%    218
+  80%    224
+  90%    421
+  95%    427
+  98%    429
+  99%    429
+ 100%    430 (longest request)
+This is ApacheBench, Version 2.3 <$Revision: 1528965 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.100.5 (be patient)
+
+
+Server Software:        Apache/2.2.22
+Server Hostname:        192.168.100.5
+Server Port:            80
+
+Document Path:          /joomla
+Document Length:        315 bytes
+
+Concurrency Level:      500
+Time taken for tests:   0.833 seconds
+Complete requests:      1000
+Failed requests:        0
+Non-2xx responses:      1000
+Total transferred:      566000 bytes
+HTML transferred:       315000 bytes
+Requests per second:    1201.13 [#/sec] (mean)
+Time per request:       416.273 [ms] (mean)
+Time per request:       0.833 [ms] (mean, across all concurrent requests)
+Transfer rate:          663.91 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    4   3.8      0       9
+Processing:     2  117 179.0     15     819
+Waiting:        2  117 179.0     15     819
+Total:         10  120 181.3     16     824
+WARNING: The median and mean for the initial connection time are not within a normal deviation
+        These results are probably not that reliable.
+
+Percentage of the requests served within a certain time (ms)
+  50%     16
+  66%     21
+  75%    224
+  80%    229
+  90%    425
+  95%    430
+  98%    823
+  99%    823
+ 100%    824 (longest request)
+This is ApacheBench, Version 2.3 <$Revision: 1528965 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.100.5 (be patient)
+
+
+Server Software:        Apache/2.2.22
+Server Hostname:        192.168.100.5
+Server Port:            80
+
+Document Path:          /joomla
+Document Length:        315 bytes
+
+Concurrency Level:      500
+Time taken for tests:   0.828 seconds
+Complete requests:      1000
+Failed requests:        0
+Non-2xx responses:      1000
+Total transferred:      566000 bytes
+HTML transferred:       315000 bytes
+Requests per second:    1207.93 [#/sec] (mean)
+Time per request:       413.932 [ms] (mean)
+Time per request:       0.828 [ms] (mean, across all concurrent requests)
+Transfer rate:          667.66 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    3   3.3      0       9
+Processing:     3  106 155.7     15     816
+Waiting:        3  106 155.7     15     816
+Total:          9  109 157.9     16     820
+
+Percentage of the requests served within a certain time (ms)
+  50%     16
+  66%     20
+  75%    222
+  80%    230
+  90%    421
+  95%    425
+  98%    426
+  99%    426
+ 100%    820 (longest request)
+This is ApacheBench, Version 2.3 <$Revision: 1528965 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.100.5 (be patient)
+
+
+Server Software:        Apache/2.2.22
+Server Hostname:        192.168.100.5
+Server Port:            80
+
+Document Path:          /joomla
+Document Length:        315 bytes
+
+Concurrency Level:      500
+Time taken for tests:   0.834 seconds
+Complete requests:      1000
+Failed requests:        0
+Non-2xx responses:      1000
+Total transferred:      566000 bytes
+HTML transferred:       315000 bytes
+Requests per second:    1198.73 [#/sec] (mean)
+Time per request:       417.108 [ms] (mean)
+Time per request:       0.834 [ms] (mean, across all concurrent requests)
+Transfer rate:          662.58 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    3   2.3      3       7
+Processing:     4  162 236.5     16     825
+Waiting:        4  162 236.5     15     825
+Total:          8  165 237.7     16     828
+
+Percentage of the requests served within a certain time (ms)
+  50%     16
+  66%    216
+  75%    224
+  80%    417
+  90%    424
+  95%    824
+  98%    826
+  99%    827
+ 100%    828 (longest request)
+This is ApacheBench, Version 2.3 <$Revision: 1528965 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.100.5 (be patient)
+
+
+Server Software:        Apache/2.2.22
+Server Hostname:        192.168.100.5
+Server Port:            80
+
+Document Path:          /joomla
+Document Length:        315 bytes
+
+Concurrency Level:      500
+Time taken for tests:   0.832 seconds
+Complete requests:      1000
+Failed requests:        0
+Non-2xx responses:      1000
+Total transferred:      566000 bytes
+HTML transferred:       315000 bytes
+Requests per second:    1201.63 [#/sec] (mean)
+Time per request:       416.101 [ms] (mean)
+Time per request:       0.832 [ms] (mean, across all concurrent requests)
+Transfer rate:          664.18 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    3   3.1      0       9
+Processing:     3  124 196.5     16     821
+Waiting:        3  124 196.5     16     821
+Total:          9  127 198.2     16     824
+
+Percentage of the requests served within a certain time (ms)
+  50%     16
+  66%     21
+  75%    223
+  80%    227
+  90%    425
+  95%    429
+  98%    821
+  99%    822
+ 100%    824 (longest request)
+This is ApacheBench, Version 2.3 <$Revision: 1528965 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.100.5 (be patient)
+
+
+Server Software:        Apache/2.2.22
+Server Hostname:        192.168.100.5
+Server Port:            80
+
+Document Path:          /joomla
+Document Length:        315 bytes
+
+Concurrency Level:      500
+Time taken for tests:   0.831 seconds
+Complete requests:      1000
+Failed requests:        0
+Non-2xx responses:      1000
+Total transferred:      566000 bytes
+HTML transferred:       315000 bytes
+Requests per second:    1202.86 [#/sec] (mean)
+Time per request:       415.677 [ms] (mean)
+Time per request:       0.831 [ms] (mean, across all concurrent requests)
+Transfer rate:          664.86 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    3   3.1      0       9
+Processing:     3  106 158.9     15     820
+Waiting:        3  106 158.9     15     820
+Total:          9  109 160.9     16     824
+
+Percentage of the requests served within a certain time (ms)
+  50%     16
+  66%     20
+  75%    219
+  80%    223
+  90%    421
+  95%    425
+  98%    426
+  99%    427
+ 100%    824 (longest request)
